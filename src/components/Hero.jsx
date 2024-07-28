@@ -1,6 +1,6 @@
 import { HERO_CONTENT } from "../constants"
 import profilePic from "../assets/kevinRushProfile.png"
-import { delay, motion } from "framer-motion";
+import {  motion } from "framer-motion";
 
 const container = (delay) =>({
     hidden:{x:-100,opacity:0},
@@ -10,6 +10,7 @@ const container = (delay) =>({
         transition: {duration: 0.5, delay :delay}
     }
 });
+
 
 const Hero = () => {
   return <div className="border-b border-neutral-900 pb-4 lg:mb-35">
